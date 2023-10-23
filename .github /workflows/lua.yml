@@ -1,0 +1,12 @@
+name: Luacheck
+
+on: [push, pull_request]
+
+jobs:
+  sile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab #v3.5.2
+      - name: Luacheck linter
+        uses: lunarmodules/luacheck@ababb6d403d634eb74d2c541035e9ede966e710d #1.1.1
